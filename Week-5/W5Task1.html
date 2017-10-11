@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script src="W5Task1.js" defer></script>
+		<style>
+			#matrix{
+				display:flex;
+				width:300px;
+				flex-wrap:wrap;
+			}
+			#matrix input{
+				width:80px;
+				padding:5px;
+				font-size:24px;
+			}
+			#result{
+				font-size:24px;
+				color:red;
+			}
+			tr{display: flex;}
+			button{
+				color: green;
+				font-size: 24;
+			}
+		</style>
+	</head>
+	<body>
+    <div id="matrix">
+		<input type="text" id="r1" size="8">
+		<input type="text" id="r2" size="8">
+		<input type="text" id="r3" size="8">
+		<input type="text" id="r4" size="8">
+		<input type="text" id="r5" size="8">
+		<input type="text" id="r6" size="8">
+		<input type="text" id="r7" size="8">
+		<input type="text" id="r8" size="8">
+		<input type="text" id="r9" size="8">
+	</div>
+	<button id="rb">Find determinant</button>
+	<div id="result">
+			<output type="text" id="r10"/>
+	</div>
+	</body>
+</html>
