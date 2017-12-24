@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="logo1.jpg" />
+		<title>Healthy Food Delivery</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	
+	<body>
+		<header>
+			<div background-image=""http://cdn.weeattogether.com/wp-content/uploads/2017/05/We-Eat-Together-Food-Photography0022-1024x683.jpg?x22891""></div>
+			<a href="main.html"><img id="logo" src="logo2.jpg"/></a>
+
+			<div id="navigation">
+				<nav>
+					<div class="element" onClick="as()"> <a id="submit" href="Create.html">Submit</a> </div>
+					<div class="element"> <a link="">News</a> </div>
+					<div class="element" id="about"> 
+						<a href="AboutHFD.html" id="submit">About us</a> 
+						<div id="subNav">
+							<div class="sub">OUR GOAL</div>
+							<div class="sub">ABOUT COMPANY</div>
+							<div class="sub">PARTNERS</div>
+							<div class="sub">CONTACTS</div>
+						</div>
+					</div>
+					<div class="element" id="join"> <a href="registration.html" id="submit">Join</a> </div>
+					
+				</nav>
+			</div>
+			
+			<p id="slogan"><strong style="word-spacing: 0.25em;">HEALTHY FOOD HEALTHY YOU!</strong></p>
+		</header>
+		
+		<div id="space"></div>
+		
+		<main id="container">
+			<div id="wrap">
+				<div class="group">
+					<div class="inside1">
+						<img class="descImg" src="healthyfood.png"/>
+
+					</div>
+					<h3><a href="Desktop.html">HEALTHY RECIPES</a></h3>
+					<div class="inside2">
+						<p class="descText">If you want to buy healthy recipes or<br> submit an advertisement of healthy recipes<br> follow link above</p>
+					</div>
+				</div>
+				
+				<div class="group">
+					<div class="inside1">
+						<img class="descImg" src="http://images.media-allrecipes.com/userphotos/465x465/04/47/34/4473423.jpg"/>
+					</div>
+					<h3><a>WEIGHT LOSS</a></h3>
+					<div class="inside2">
+						<p class="descText">If you want to buy weight loss or<br> submit an advertisement of a weight loss<br> follow link above</p>
+					</div>
+				</div>
+				
+				<div class="group">
+					<div class="inside1"> 
+						<img class="descImg" src="http://images.media-allrecipes.com/userphotos/960x960/4573671.jpg"/>
+					</div>
+					<h3><a>SPECIAL DIETS</a></h3>
+					<div class="inside2">
+						<p class="descText">If you want to buy special diets or<br> submit an advertisement of special diets<br> follow link above</p>
+					</div>
+				</div>
+				
+				<div class="group">
+					<div class="inside1">
+						<img class="descImg" src="http://images.media-allrecipes.com/userphotos/960x960/3884259.jpg"/>
+					</div>
+					<h3><a>MEAL PLANS</a></h3>
+					<div class="inside2">
+						<p class="descText">If you want to buy meal plans or<br> submit an advertisement of a meal plans<br> follow link above</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<footer>
+			<p class="fText">© ABYLAIKHAN STREET 1/1, ALMATY REGION, KAZAKHSTAN</p>
+			<p class="fText">TEL: 8(700)-28-28-128</p>
+			<p class="fText">E-MAIL: abai_kalikov@mail.ru</p>
+		</footer>
+
+
+		<script type="text/javascript" >
+            
+        
+            var controls = document.querySelectorAll('.controls');
+            for(var i=0; i<controls.length; i++){
+                    controls[i].style.display = 'inline-block';}
+            var slides = document.querySelectorAll('#slides .slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide,2000);
+            function nextSlide(){
+                goToSlide(currentSlide+1);}
+            function previousSlide(){
+                goToSlide(currentSlide-1);}
+            function goToSlide(n){
+                slides[currentSlide].className = 'slide';
+                currentSlide = (n+slides.length)%slides.length;
+                slides[currentSlide].className = 'slide showing';}	
+        
+            var playing = true;
+            var pauseButton = document.getElementById('pause');
+            function pauseSlideshow(){
+                pauseButton.innerHTML = '&#9658;'; // play character
+                playing = false;
+                clearInterval(slideInterval);}
+        
+            function playSlideshow(){
+                pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
+                playing = true;
+                slideInterval = setInterval(nextSlide,2000);}
+        
+            pauseButton.onclick = function(){
+                if(playing){ pauseSlideshow(); }
+                else{ playSlideshow(); }};
+        
+            var next = document.getElementById('next');
+            var previous = document.getElementById('previous');
+        
+            next.onclick = function(){
+                pauseSlideshow();
+                nextSlide();};
+            previous.onclick = function(){
+                pauseSlideshow();
+                previousSlide();};
+        
+        
+		</script>
+		
+	</body>
+</html>

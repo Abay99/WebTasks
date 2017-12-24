@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="logo2.jpg" />
+		<title>Healthy Food Delivery</title>
+		<link rel="stylesheet" type="text/css" href="Create.css">
+	</head>
+	
+	<body>
+		<header>
+			<a href="main.html"><img id="logo" src="logo2.jpg"/></a>
+			
+			<div id="navigation">
+				<nav>
+					<div class="element" onClick="as()"> <a id="submit" href="Create.html">Submit</a> </div>
+					<div class="element"> <a link="">News</a> </div>
+					<div class="element" id="about"> 
+                            <a href="AboutHFD.html" id="submit">About us</a> 
+                            <div id="subNav">
+                                <div class="sub">OUR GOAL</div>
+                                <div class="sub">ABOUT COMPANY</div>
+                                <div class="sub">PARTNERS</div>
+                                <div class="sub">CONTACTS</div>
+                            </div>
+                        </div>
+                        <div class="element" id="join"> <a href="registration.html" id="submit">Join</a> </div>
+				</nav>
+			</div>
+			
+		</header>
+
+		<form method="POST" action="Create.php" enctype="multipart/form-data">
+		
+				<div id="space"></div>
+				
+				<main id="container">
+					<div id="wrap">
+					<div class="images">
+						<text>Enter first name:</text>
+						<div class="create">
+							<input type="text" size="40" placeholder="Your name..." name="your_name">
+						</div>
+						<text>Enter last name:</text>
+						<div class="create">
+							<input type="text" size="40" placeholder="Your last name..." name="surname">
+						</div>
+						<text>Enter your e-mail address:</text>
+						<div class="create">
+							<input type="text" size="40" placeholder="Your address..." name="e-mail"> 
+						</div>
+					</div>
+					<div class="images">
+							<text>Enter name of healthy food:</text>
+							<div class="create">
+								<input type="text" size="40" placeholder="Name of your food..." name="food_name"> 
+							</div>
+							<text>Enter a price:</text>
+							<div class="create">
+								<input type="text" size="40" placeholder="Price of your food..." name="price">
+							</div>
+							<text>Choose photo of healthy food:</text>
+							<div class="create">
+								<input type="file" rows="10" cols="40" placeholder="Link of your food..." name="photo">
+							</div>
+						</div>
+					<div class="images">
+						<text>Enter description of healthy food</text>
+						<div class="create">
+							<textarea type="text" rows="20" cols="40" placeholder="Description of your food..." name="description"></textarea>
+						</div>
+					</div>
+					</div>
+					</div>
+					<input id="add" name="submit" type="submit" value="SUBMIT ORDER"></input>
+						</main>
+			</form>
+
+			<!-- South of the Border Buddha Bowl
+
+			Toss tofu, 1 tablespoon oil, tamari (or soy sauce) and chili powder in a medium bowl. Place on one side of the prepared baking sheet. Add pepper, onion and 1 teaspoon oil to the bowl; stir to coat. Place the vegetables on the other side of the baking sheet. Roast until the vegetables are tender and the tofu is sizzling, about 20 minutes. Meanwhile, combine the remaining 4 tablespoons oil, avocado, water, cilantro, lime juice, coriander and salt in a blender jar or mini food processor. Process until smooth, scraping the sides down as necessary. Place ½ cup rice in each of 2 shallow serving bowls. Top with the tofu, roasted vegetables, lettuce and tomatoes. Spoon 4 tablespoons dressing over each bowl and sprinkle with pumpkin seeds.
+			Tip: People with celiac disease or gluten sensitivity should use soy sauces that are labeled "gluten-free," as soy sauce may contain wheat or other gluten-containing sweeteners and flavors. -->
+
+        <!-- <div class="container">
+          <div style="text-align:center">
+            <h2>Submit</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div id="map" style="width:100%;height:500px"></div>
+            </div>
+            <div class="column">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">KAZAKHSTAN</option>
+                  <option value="canada">RUSSIA</option>
+                  <option value="china">CHINA</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <script>
+        // Initialize google maps
+        function myMap() {
+          var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {center: myCenter, zoom: 12};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+        
+		<footer>
+			<p class="fText">© ABYLAIKHAN STREET 1/1, ALMATY REGION, KAZAKHSTAN</p>
+			<p class="fText">TEL: 8(700)-28-28-128</p>
+			<p class="fText">E-MAIL: abai_kalikov@mail.ru</p>
+		</footer>
+	</body>
+</html>

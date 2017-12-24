@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="logo2.jpg" />
+		<title>Healthy Food Delivery</title>
+		<link rel="stylesheet" type="text/css" href="Desktop.css">
+	</head>
+	
+	<body>
+		<header>
+			<a href="main.html"><img id="logo" src="logo2.jpg"/></a>
+			
+			<div id="navigation">
+				<nav>
+					<div class="element" onClick="as()"> <a id="submit" href="Create.html">Submit</a> </div>
+					<div class="element"> <a link="">News</a> </div>
+					<div class="element" id="about"> 
+                            <a href="AboutHFD.html" id="submit">About us</a> 
+                            <div id="subNav">
+                                <div class="sub">OUR GOAL</div>
+                                <div class="sub">ABOUT COMPANY</div>
+                                <div class="sub">PARTNERS</div>
+                                <div class="sub">CONTACTS</div>
+                            </div>
+                        </div>
+                        <div class="element" id="join"> <a href="registration.html" id="submit">Join</a> </div>
+				</nav>
+			</div>
+
+			
+			<p id="slogan"><strong style="word-spacing: 0.25em;">HEALTHY FOOD HEALTHY YOU!</strong></p>
+		</header>
+		
+		<div id="space"></div>
+		
+		<main id="container">
+			<div id="wrap">
+				<!--<div class="group">
+					<div class="image"><img class="image1" src="http://images.media-allrecipes.com/userphotos/960x960/3879362.jpg"/></div>
+					<div class="context">
+						<div class="header"><a href="Krita.html">Roasted Chicken with Pan Gravy</a></div>
+						<div class="text">In this easy roast chicken recipe, onions, carrots and celery cook underneath and soak up the juices from the roasting bird. The delicious vegetables are then used to make easy, healthy gravy. Serve this dish with a big green salad with vinaigrette.</div>
+						<div class="price"><p><mark>20.99$</mark></p></div>
+					</div>
+				</div>
+				
+				<div class="group">
+					<div class="image"><img class="image1" src="http://assets.eatingwell.com/sites/default/files/imagecache/standard/recipes/OT6961_0.JPG"/></div>
+					<div class="context">
+						<div class="header"><a href="Krita2.html">Healthy Snack: Baked Chickpea 'Nuts' Recipe</a></div>
+						<div class="text">Need a new slimming, healthy snack idea? This chickpea "nuts" recipe is an easy snack that will keep you satisfied between meals. Chickpeas are full of fiber and are a good vegetarian source of protein. When chickpeas are baked, they get crunchy like nuts. Try baked chickpeas with this healthy snack recipe.</div>
+						<div class="price"><p><mark>10.79$</mark></p></div>
+					</div>
+				</div>-->
+			</div>
+		</main>
+		
+		<footer>
+			<p class="fText">© ABYLAIKHAN STREET 1/1, ALMATY REGION, KAZAKHSTAN</p>
+			<p class="fText">TEL: 8(700)-28-28-128</p>
+			<p class="fText">E-MAIL: abai_kalikov@mail.ru</p>
+		</footer>
+		
+		<button id="floatAdd"><a href="Create.html">+</a></button>
+		<script>
+
+
+
+            // fetch("foods.json", {
+			// }).then(function(response){
+			// 	responce.json().then(function(data){
+			// 		const container  = document.querySelector("#wrap");
+			// 		for(let element of data){
+			// 			const group = document.createElement("div");
+			// 			group.classList.add("group");
+			// 			const imgContainer = document.createElement("div");
+			// 			imgContainer.classList.add("image");
+			// 			const img = document.createElement("img");
+			// 			img.classList.add(image1);
+			// 			img.src = element.img;
+			// 			imgContainer.appendChild(img);
+			// 			group.appendChild(imgContainer);
+			// 			const context = document.createElement("div");
+			// 			context.classList.add("context");
+			// 			const header = document.createELement("div");
+			// 			header.classList.add("header");
+			// 			const a = document.createELement("a");
+			// 			a.href = element.href;
+			// 			a.textContent = element.title;
+			// 			header.appendChild(a);
+			// 			context.appendChild(header);
+			// 			const text = document.createElement("div");
+			// 			text.classList.add("text");
+			// 			text.textContent = element.description;
+			// 			context.appendChild(text);
+			// 			const price = document.createELement("div");
+			// 			price.classList.add("price");
+			// 			const p = document.createElement("p");
+			// 			const mark = document.createELement("mark");
+			// 			mark.textContent = element.price + "$";
+			// 			p.appendChild(mark);
+			// 			price.appendChild(p);
+			// 			context.appendChild(price);
+			// 			group.appendChild(context);
+			// 			container.appendChild(group);
+
+
+			// 		}
+			// 	});
+			// });
+
+			fetch("foods.json", {
+			}).then(function(response) {
+				response.json().then(function(data) {
+					const container = document.querySelector("#wrap");
+					for (let element of data) {
+						const group = document.createElement("div");
+						group.classList.add("group");
+						const imgContainer = document.createElement("div");
+						imgContainer.classList.add("image");
+						const img = document.createElement("img");
+						img.classList.add("image1");
+						img.src = element.img;
+						imgContainer.appendChild(img);
+						group.appendChild(imgContainer);
+						const context = document.createElement("div");
+						context.classList.add("context");
+						const header = document.createElement("div");
+						header.classList.add("header");
+						const a = document.createElement("a");
+						a.href = element.href;
+						a.textContent = element.title;
+						header.appendChild(a);
+						context.appendChild(header);
+						const text = document.createElement("div");
+						text.classList.add("text");
+						text.textContent = element.description;
+						context.appendChild(text);
+						const price = document.createElement("div");
+						price.classList.add("price");
+						const p = document.createElement("p");
+						const mark = document.createElement("mark");
+						mark.textContent = element.price + "$";
+						p.appendChild(mark);
+						price.appendChild(p);
+						context.appendChild(price);
+						group.appendChild(context);
+						container.appendChild(group);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

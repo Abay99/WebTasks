@@ -1,0 +1,289 @@
+body{
+	margin:0;
+	background-color:#F5F5F5;
+}
+
+
+header{
+	height:500px;
+	background-image:url("https://www.vccircle.com/wp-content/uploads/2016/10/For-Barbeque-Story-2_ThinkstockPhotos-531464020-4.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+#navigation{
+	position:absolute;
+	top:0px;
+	right:0px;
+	font-family: "adobe-garamond-pro";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #dcdcdc;
+}
+
+
+.element{
+	cursor: pointer;
+	display:inline-block;
+	margin:20px;
+}
+#submit{
+	text-decoration: none;
+	color: #dcdcdc;
+}
+#submit:hover{
+	color: #FFFFFF;
+}
+.element:hover{
+	color:#FFFFFF;
+}
+
+
+#join{
+	border:2px solid #FFFFFF;
+	padding:5px 25px;
+	border-radius:30px;
+}
+#join:hover{
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+
+#about:hover #subNav{
+	display:block;
+}
+#subNav{
+	display:none;
+	position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.sub{
+	color: #FFFFFF;
+    padding: 12px 16px;
+	font-size:14px;
+    text-decoration: none;
+    display: block;
+}
+.sub:hover {
+	color:#000000;
+	background-color: #f1f1f1;
+}
+
+
+#logo{
+	position-relative;
+	width:250px;
+	height:130px;
+}
+#logo:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#slogan{
+	font-size:68px;
+	font-weight:400;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+
+#floatAdd{
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	width:50px;
+	height:50px;
+	background-color: #000000;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 1px solid #000000;
+	border-radius:50%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#floatAdd a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+#floatAdd:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#container{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+#wrap{
+
+}
+
+.group{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin:20px auto;
+	width:50%;
+	background-color:#FFFFFF;
+	border:1px solid #E0E0E0;
+	padding:30px;
+}
+
+.image1{
+	display:block;
+	width: 100%;
+	height: 100%;
+	max-width:300px;
+	max-height: 300px;
+	border-radius: 50%;
+	border:1px solid #E0E0E0;
+}
+
+.context{
+	margin-left:30px;
+	width:400px;
+}
+
+.header{
+	margin-bottom:10px;
+	
+}
+
+.header a{
+	text-decoration:none;
+	font-family: "proxima-nova";
+    font-size: 22px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+	text-decoration:none;
+	color:#8D6E63;
+}
+.header a:hover{
+	color:#4E342E;
+}
+
+.text{
+	color:#BCAAA4;
+	font-family: "adobe-garamond-pro";
+    font-size: 18px;
+    line-height: 1.1em;
+    font-style: normal;
+}
+
+.price{
+	font-family: "adobe-garamond-pro";
+    font-size: 18px;
+}
+
+footer{
+	padding:20 0 20 0;
+	background-color:#263238;
+	color:white;
+	text-align:center;
+	position:absolute;
+	right:0;
+	left:0;
+}
+.fText{
+	font-family: "Trebuchet MS";
+}
+
+#hidden{
+	position:absolute;
+	top:30px;
+	right:30px;
+	font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #dcdcdc;
+	display:none;
+	
+}
+#subAbout{
+	position:relative;
+    color: #dcdcdc;
+	display:none;
+}
+.subAbout{
+	color: #000000;
+    padding: 12px 16px;
+	font-size:12px;
+    text-decoration: none;
+    display: block;
+}
+.subAbout:hover {
+	transition-duration: 0.4s;
+	color:#f1f1f1;
+	background-color: #000000;
+}
+
+
+
+@media screen and (max-width: 773px) {
+	#container{
+		
+	}
+	#slogan{
+		font-size:50px;
+	}
+	#logo{
+		width:150px;
+		height:90px;
+	}
+	#navigation{
+		display:none;
+	}
+	
+	#hidden{
+		display:block;
+	}
+	
+	#subDrawer{
+		display:none;
+		position: absolute;
+		background-color: #000000;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.subDrawer{
+		font-size:14px;
+		padding: 12px 16px;
+	}
+	.subDrawer:hover{
+		transition-duration: 0.4s;
+		color:#000000;
+		background-color: #f1f1f1;
+	}
+	#hidden:hover #subDrawer{
+		right:0;
+		display:block;
+		transition-duration: 0.4s;
+	}
+	#aboutDrawer:hover #subAbout{
+		display:block;
+	}
+	
+}
+
+img{
+	margin:auto;
+	display:block;
+	width: 100%;
+	height: 100%;
+	max-width:130px;
+	max-height: 130px;
+	border:1px solid #E0E0E0;
+	border-radius: 50%;
+}
