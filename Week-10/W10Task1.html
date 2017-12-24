@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>CarShop</title>
+</head>
+<body>
+<form action="W10Task1.php" method="get">
+	<div class="left">
+		Maker and Model
+		<p>Price</p>
+		<p>Condition</p>
+		<p>Type</p>
+		<p>Attributes</p>
+	</div>
+	<p>
+		<select name="maker" required>
+			<option>BMW X5</option>
+			<option>Toyota</option>
+			<option>Mercedes</option>
+		</select>
+	</p>
+
+	<p>
+		<input type="text" name="price">
+	
+	</p>
+
+	<p>
+		<label><input type="radio" name="condition" value="old">Old</label>
+		<label><input type="radio" name="condition" value="new">New </label>
+	</p>
+
+
+	<p>
+		<select name="type" required>
+			<option>Coupe</option>
+			<option>Sedan</option>
+			<option>Hatchback</option>
+		</select>
+	</p>
+
+	<p>
+		<label><input type="checkbox" name="attribute[]" id="attribute" value="CD/DVD">CD/DVD<br></label>
+		<label><input type="checkbox" name="attribute[]" id="attribute" value="Seat heating">Seat heating<br></label>
+		<label><input type="checkbox" name="attribute[]" id="attribute" value="Cruise control">Cruise control<br></label>
+	</p>
+	<input type="submit" name="submit" value="Submit">
+</form>
+</body>
+<style type="text/css">
+	.left{
+		font-weight: bold;
+		font-size: 20px;
+		height: 25vh;
+		width: 15vw;
+		float: left;
+	}
+</style>
+</html>
